@@ -23,9 +23,6 @@ function App() {
 
     return (
         <div>
-            {
-                cars.map((car, i) => <Car id={i} model={car.model} speed={car.speed} engine={car.engine}/>)
-            }
         </div>
     );
 }
