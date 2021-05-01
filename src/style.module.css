@@ -1,0 +1,107 @@
+.contentWrap{
+    display: flex;
+    justify-content: center;
+    width: 1300px;
+    margin: 0 auto;
+}
+.wrap{
+    padding: 20px;
+    margin: 20px;
+    background: #eeffe3;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1)
+}
+.rowDiv{
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+.box{
+    flex-basis: 27%;
+}
+.details{
+    margin: 20px;
+    padding: 20px 30px;
+    border: 1px solid;
+    border-radius: 50px;
+
+}
+.details div{
+    padding: 10px;
+}
+button{
+    background: white;
+    border: 1px solid;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 10px 0;
+}
+.menu{
+    margin: 40px 20px 20px 50px;
+    display: flex;
+}
+.menu a{
+    text-decoration: none;
+    color: grey;
+    padding: 10px 20px;
+}
+.menu a:hover{
+    opacity: 0.6;
+    transition-duration: 0.4s;
+}
+.menu a:focus{
+    color: black;
+}
+.postsDiv{
+    display: flex;
+}
+.posts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 70%;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-basis: 26%;
+    margin: 10px;
+    padding: 20px;
+    background: rgba(234, 234, 234, 0.55);
+    border-radius: 10px;
+    box-shadow: 8px 5px  10px rgba(0, 0, 0, 0.03);
+}
+.t{
+    font-size: 19px;
+    line-height: 30px;
+}
+h3{
+    margin: 5px 0;
+}
+p{
+    margin: 0;
+}
+.author{
+    color: #154455;
+}
+.author:hover{
+    color: #154455;
+    text-decoration: none;
+}
+
+.moreBtn{
+    color: #000000;
+    opacity: 0.8;
+
+}
+.moreBtn:hover{
+    color: #000;
+    opacity: 1;
+}
