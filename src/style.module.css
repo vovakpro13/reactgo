@@ -105,3 +105,26 @@ p{
     color: #000;
     opacity: 1;
 }
+
+.userMenu a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: grey;
+    transition-duration: 0.4s;
+
+}
+
+.userMenu a:hover {
+    color: #000000;
+    transition-duration: 0.4s;
+}
+
+.commentDiv{
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.commentDiv > div{
+    margin-bottom: 10px;
+}

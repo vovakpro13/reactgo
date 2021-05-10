@@ -1,14 +1,17 @@
 import s from '../../style.module.css';
+import {Link} from "react-router-dom";
 
-function User({user, setDetails}) {
-    const {name, email} = user;
+const User = ({user:{name, email, id}, url}) =>{
     return (
-        <div className={s.wrap} id={`user${user.id}`}>
+        <div className={s.wrap} id={`user${id}`}>
             <div>
                 <div><strong>Name:</strong> {name}</div>
                 <div><strong>E-mail:</strong> <em>{email}</em></div>
             </div>
-            <button onClick={() => setDetails(user)}>details</button>
+            <div className={s.userMenu}>
+                <Link to={url + '/' + id}>Details</Link>
+                <Link to={url + '/' + id + '/posts'}>Posts</Link>
+            </div>
         </div>
     );
 }

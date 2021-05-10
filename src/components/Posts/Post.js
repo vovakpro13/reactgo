@@ -7,6 +7,7 @@ function Post({post, setDetailsPost, setAuthor}) {
             <h4>Post #{id}</h4>
             <div><strong>Title: </strong><em >{title}</em></div><br/>
             <a className={s.moreBtn} href={'#'} onClick={() => {setDetailsPost(post); setAuthor()}}>Show more</a>
+            <a className={s.moreBtn}  href={'/comments/' + id}>Comments for {id} post</a>
         </div>
     );
 }

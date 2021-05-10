@@ -3,6 +3,8 @@ import Users from "./components/Users/Users";
 import {Route,Link} from "react-router-dom";
 import s from './style.module.css';
 import Posts from "./components/Posts/Posts";
+import UserDetails from "./components/Users/UserDetails/UserDetails";
+import Comments from "./components/Comments/Comments";
 
 function App() {
     return (
@@ -14,15 +16,12 @@ function App() {
             </div>
 
             <div className={s.contentWrap}>
-                <Route exact only path={'/'} >
-                    <h3 className={s.wrap}>Main page</h3>
-                </Route>
-                <Route path={'/users'} >
-                    <Users />
-                </Route>
-                <Route path={'/posts'} >
-                    <Posts />
-                </Route>
+                <Route exact path={'/'} render={() => <h3 className={s.wrap}>Main page</h3>}/>
+                <Route exact path={'/users'} render={({match:{url}}) => <Users url={url}/>}/>
+                <Route exact path={'/users/:id'} render={({match: {params:{id}}}) =>  <UserDetails id={id}/>}/>
+                <Route exact path={'/users/:id/posts'} render={({match: {params:{id}}}) =>  <Posts userId={id} />}/>
+                <Route exact path={'/comments/:postId'} render={({match: {params:{postId}}}) =>  <Comments postId={postId}/>}/>
+                <Route exact path={'/posts'} render={() =>  <Posts />}/>
             </div>
 
         </div>
