@@ -1,0 +1,9 @@
+.characterWrapper{
+    margin: 20px 40px;
+    border-bottom: 2px solid grey;
+    width: 230px;
+    flex-basis: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

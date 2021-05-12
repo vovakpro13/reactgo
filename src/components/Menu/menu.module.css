@@ -1,0 +1,9 @@
+.wrapper{
+    width: 200px;
+    margin: 0 50px;
+}
+
+.title{
+    padding-bottom: 7px;
+    border-bottom: 2px solid ;
+}

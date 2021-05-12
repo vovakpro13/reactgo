@@ -1,0 +1,10 @@
+.inventoryWrapperDiv{
+    margin: 30px auto;
+    width: 900px;
+}
+
+.inventoryWrapper{
+
+    display: flex;
+    flex-wrap: wrap;
+}

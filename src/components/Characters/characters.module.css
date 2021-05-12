@@ -1,0 +1,10 @@
+.charactersWrapperDiv{
+    width: 900px;
+    margin: 50px auto;
+}
+
+.charactersWrapper{
+    display: flex;
+    flex-wrap: wrap;
+
+}
